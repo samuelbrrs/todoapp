@@ -1,0 +1,34 @@
+@startuml
+
+skinparam roundcorner 10
+
+title Class Diagram - ToDo App
+
+class User #pink {
+    first_name: CharField
+    last_name: CharField
+    username: CharField
+    password: CharField
+    email: EmailField
+}
+
+note right of User
+    A classe User é do pacote django.contrib.auth
+end note
+
+class UserProfile {
+    photo: ImageField
+    secondary_email: EmailField
+    cell_phone: CharField
+
+    __str__()
+}
+
+class Category {
+    name: CharField
+    description: TextField
+    owner: User
+
+    __str__
+}
+    
