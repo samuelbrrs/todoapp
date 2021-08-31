@@ -11,8 +11,9 @@
 
 {% block body %}
     <div class="container"> 
-        <h1>Adicionar Categoria</h1>
-        {% include 'partials/messages html' %}
+        <form action="." method="POST">
+        <h1>Categoria</h1>
+        {% include 'partials/messages.html' %} 
         <div class="row">
             <div class="col-md-12">
                 <form action="." method="POST">
